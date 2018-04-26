@@ -13,7 +13,7 @@
     <label for="email" id="email">
         Mail
     </label>
-    <input type="texte" id="email" name="email">
+    <input type="text" id="email" name="email">
     <input type="hidden" name="a" value="login">
     <input type="hidden" name="r" value="auth">
     <input type="submit" value="Se connecter">

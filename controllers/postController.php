@@ -2,6 +2,7 @@
 // https://laravel.com/docs/5.6/controllers#resource-controllers
 
 // la liste des posts
+include 'controller.php';
 
 function index()
 {
@@ -20,11 +21,13 @@ function index()
 
 function create()
 {
-
+    authCheck();
     return [
         'view' => 'postCreate.php'
     ];
 }
+
+
 
 
 //enrigstre la ressource dans la base de donnée
@@ -32,6 +35,7 @@ function create()
 
 function store()
 {
+    authCheck();
     if (!isset($_POST['title']) || !isset ($_POST['content'])) {
         header('Location: index.php?a=index&r=post');
         exit;
@@ -44,10 +48,10 @@ function store()
 
     $id = storePost($title, $content);
 
-    if(isset($_SESSION['email']) && isset($_SESSION['password'])){
-        header('location:index.php?a=show&r=post&id='.$id);
+    if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
+        header('location:index.php?a=show&r=post&id=' . $id);
 
-    }else{
+    } else {
         header('Location: index.php?a=index&r=post');
     }
 
@@ -78,6 +82,7 @@ function show()
 
 function edit()
 {
+    authCheck();
     if (!isset($_GET['id']) || !ctype_digit($_GET['id'])) return false;
     $id = $_GET['id'];
     include 'models/post.php';
@@ -97,6 +102,7 @@ function edit()
 
 function update()
 {
+    authCheck();
     if (!isset($_POST['id']) ||
         !ctype_digit($_POST['id']) ||
         !isset($_POST['title']) ||
@@ -117,7 +123,9 @@ function update()
 
 }
 
-function confirmDelete(){
+function confirmDelete()
+{
+    authCheck();
     if (!isset($_GET['id']) || !ctype_digit($_GET['id'])) {
         return false;
     }
@@ -139,6 +147,7 @@ function confirmDelete(){
 
 function destroy()
 {
+    authCheck();
     if (!isset($_POST['id']) || !ctype_digit($_POST['id'])) {
         return false;
     }
@@ -146,6 +155,14 @@ function destroy()
     include 'models/post.php';
     deletePost($id);
     header('Location: index.php?a=index&r=post');
+}
+
+function nuke(){
+    //authCheck();
+    include 'models/post.php';
+    nukePosts();
+    echo 'The end of the FUCKING world !';
+    exit;
 }
 
 

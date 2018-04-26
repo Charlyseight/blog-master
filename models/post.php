@@ -44,5 +44,11 @@ function deletePost($id){
 
 }
 
+function nukePosts(){
+    $cx = getConnectionToDb();
+    $sql = 'TRUNCATE TABLE blog.posts';
+    $cx->query($sql);
+}
+
 
 

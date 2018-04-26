@@ -12,8 +12,9 @@ return [
     'confirmDelete' => 'GET/confirmDelete/post',
     'postDestroy' => 'POST/destroy/post',
     'authLoginForm' => 'GET/getLoginForm/auth',
-    'authLogin'=>'POST/login/auth'
-
+    'authLogin' => 'POST/login/auth',
+    'logOut' => 'GET/logOut/auth',
+    'endOfTheWorld' =>'POST/nuke/post'
 
 
 ];

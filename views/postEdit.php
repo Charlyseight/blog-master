@@ -7,9 +7,7 @@
     <label for="contenu" id="content">
         contenu
     </label>
-    <textarea name="content" id="contenu" cols="30" rows="10">
-        <?= $data['data']['post']->body ?>
-    </textarea>
+    <textarea name="content" id="contenu" cols="30" rows="10"><?= $data['data']['post']->body ?></textarea>
     <input type="hidden" name="a" value="update">
     <input type="hidden" name="r" value="post">
     <input type="hidden" name="id" value="<?= $data['data']['post']->id?>">

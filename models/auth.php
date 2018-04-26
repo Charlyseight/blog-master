@@ -4,7 +4,7 @@ include 'model.php';
 
 function authLogin($password,$email){
     $cx = getConnectionToDb();
-    $sql = 'SELECT password, email FROM blog.user WHERE password = :password AND email = :email';
+    $sql = 'SELECT * FROM blog.user WHERE password = :password AND email = :email';
     $pst = $cx->prepare($sql);
     $pst->execute([':password' => $password,
                     ':email' => $email]);

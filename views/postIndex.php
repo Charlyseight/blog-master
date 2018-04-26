@@ -9,7 +9,7 @@
                     <a href="index.php?a=show&r=post&id=<?= $post->id; ?>"><?= $post->title; ?>
                     </a>
                 </h2>
-                <?php if(isset($_SESSION['email']) && isset($_SESSION['password'])): ?>
+                <?php if(isset($_SESSION['user'])): ?>
                     <div>
                         <a href="index.php?a=edit&r=post&id=<?= $post->id; ?>">
                             Modifier l'article
