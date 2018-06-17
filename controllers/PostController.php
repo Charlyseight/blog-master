@@ -35,7 +35,7 @@ class PostController extends Controller
 
         return [
             'view' => 'postIndex.php',
-            'data' => ['pageTitle' => 'liste des posts',
+            'data' => ['pageTitle' => 'List of posts',
                 'posts' => $posts,
                 'articles' => $articles,
                 'categories' => $categories
@@ -61,6 +61,7 @@ class PostController extends Controller
         return[
             'view' => 'postIndex.php',
             'data' => [
+                'pageTitle' => 'Post about '.$cat,
                 'posts' => $posts,
                 'articles' => $articles,
                 'categories' => $categories,
@@ -294,6 +295,7 @@ class PostController extends Controller
         return[
             'view'=> 'postIndex.php',
             'data' => [
+                'pageTitle' => 'Posts from '.$month.' '.$year,
                 'categories' => $categories,
                 'posts' => $posts,
                 'articles' => $articles,

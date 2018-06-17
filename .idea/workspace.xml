@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4d673e01-fc27-4be4-b5cc-2098ff0dc308" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/configs/routes.php" afterPath="$PROJECT_DIR$/configs/routes.php" />
       <change beforePath="$PROJECT_DIR$/controllers/PostController.php" afterPath="$PROJECT_DIR$/controllers/PostController.php" />
-      <change beforePath="$PROJECT_DIR$/models/Auth.php" afterPath="$PROJECT_DIR$/models/Auth.php" />
-      <change beforePath="$PROJECT_DIR$/models/Post.php" afterPath="$PROJECT_DIR$/models/Post.php" />
-      <change beforePath="$PROJECT_DIR$/views/layout.php" afterPath="$PROJECT_DIR$/views/layout.php" />
-      <change beforePath="$PROJECT_DIR$/views/postAdmin.php" afterPath="$PROJECT_DIR$/views/postAdmin.php" />
+      <change beforePath="$PROJECT_DIR$/views/postIndex.php" afterPath="$PROJECT_DIR$/views/postIndex.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,11 +94,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="postIndex.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/postIndex.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="PostController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="402">
+              <caret line="298" column="42" lean-forward="false" selection-start-line="298" selection-start-column="42" selection-end-line="298" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -139,7 +145,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Auth.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Auth.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Auth.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="143">
@@ -214,13 +220,13 @@
         <option value="$PROJECT_DIR$/views/postCreate.php" />
         <option value="$PROJECT_DIR$/views/postEdit.php" />
         <option value="$PROJECT_DIR$/views/postUser.php" />
-        <option value="$PROJECT_DIR$/views/postIndex.php" />
         <option value="$PROJECT_DIR$/configs/routes.php" />
-        <option value="$PROJECT_DIR$/controllers/PostController.php" />
         <option value="$PROJECT_DIR$/views/postAdmin.php" />
         <option value="$PROJECT_DIR$/views/layout.php" />
         <option value="$PROJECT_DIR$/models/Post.php" />
         <option value="$PROJECT_DIR$/models/Auth.php" />
+        <option value="$PROJECT_DIR$/controllers/PostController.php" />
+        <option value="$PROJECT_DIR$/views/postIndex.php" />
       </list>
     </option>
   </component>
@@ -345,7 +351,7 @@
       <workItem from="1526557256931" duration="144000" />
       <workItem from="1529135362500" duration="33932000" />
       <workItem from="1529224993238" duration="15779000" />
-      <workItem from="1529265618402" duration="5267000" />
+      <workItem from="1529265618402" duration="6250000" />
     </task>
     <task id="LOCAL-00001" summary="add sql file">
       <created>1524743788842</created>
@@ -365,11 +371,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123616000" />
+    <option name="totallyTimeSpent" value="124599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="793" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -379,7 +384,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.027739251" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35506243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -432,7 +437,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/controllers/PostController.php</url>
-          <line>306</line>
+          <line>308</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -699,13 +704,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/postCategory.php" />
-    <entry file="file://$PROJECT_DIR$/views/postIndex.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="80" column="37" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configs/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -777,37 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
-          <folding>
-            <marker date="1529270824566" expanded="true" signature="1598:1699" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="1777:2335" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="1834:2291" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="1950:2270" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="2592:2650" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="2772:2862" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="2829:2862" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="3161:3405" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="3173:3317" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="3253:3312" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="3329:3391" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="3417:3499" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="3641:3782" ph="..." />
-            <marker date="1529270824566" expanded="true" signature="4044:4069" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -850,6 +817,45 @@
             <marker date="1529270994231" expanded="true" signature="1429:1451" ph="SELECT * FRO... category" />
             <marker date="1529270994231" expanded="true" signature="1443:1451" ph="SELECT * FRO... category" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="298" column="42" lean-forward="false" selection-start-line="298" selection-start-column="42" selection-end-line="298" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+          <folding>
+            <marker date="1529270824566" expanded="true" signature="1598:1699" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="1777:2335" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="1834:2291" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="1950:2270" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="2592:2650" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="2772:2862" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="2829:2862" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="3161:3405" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="3173:3317" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="3253:3312" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="3329:3391" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="3417:3499" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="3641:3782" ph="..." />
+            <marker date="1529270824566" expanded="true" signature="4044:4069" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/postIndex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
