@@ -248,11 +248,13 @@ class PostController extends Controller
         }
         $posts=$this->postModel->all();
         $categories = $this->postModel->categories();
+        $users = $this->postModel->getUsers();
         return[
             'view' => 'postAdmin.php',
             'data' => [
                 'posts' => $posts,
                 'categories' => $categories,
+                'users'=> $users,
             ]
         ];
     }
@@ -298,6 +300,16 @@ class PostController extends Controller
             ]
         ];
 
+        }
+
+        function admin(){
+            $this->authCheck();
+            $toggleAdmin = $_POST['toggleadmin'];
+            $admin = $_POST['admin'];
+            $this->postModel->editAdmin($toggleAdmin,$admin);
+
+            header('Location: index.php?a=adminPage&r=post');
+            exit;
         }
 
     function nuke()

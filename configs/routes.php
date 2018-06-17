@@ -24,6 +24,7 @@ return [
     "removeCategory" => 'POST/removeCat/post',
     "postArchive" => 'GET/archive/post',
     "catAbout" => 'POST/catAbout/post',
+    "AdminOrNotAdmin" => 'POST/admin/post',
 ];
 
 

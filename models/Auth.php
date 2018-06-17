@@ -7,7 +7,7 @@ class Auth extends Model
     function authLogin($password, $email)
     {
         $cx = $this->getConnectionToDb();
-        $sql = 'SELECT password, id FROM blogboot.users WHERE email = :email';
+        $sql = 'SELECT password, id FROM users WHERE email = :email';
         $pst = $cx->prepare($sql);
         $pst->execute([':email' => $email]);
         $res = $pst->fetch();
@@ -15,7 +15,7 @@ class Auth extends Model
             $pwHash = $res->password;
             $id = $res->id;
             if(password_verify($password, $pwHash)){
-                $sql = 'SELECT * FROM blogboot.users WHERE id = :id';
+                $sql = 'SELECT * FROM users WHERE id = :id';
                 $pst = $cx->prepare($sql);
                 $pst->execute([':id' => $id]);
                 return $pst->fetch();
@@ -28,7 +28,7 @@ class Auth extends Model
 
     function store($password,$email, $name){
         $cx = $this->getConnectionToDb();
-        $sql = 'INSERT INTO blogboot.users(name,password, email) VALUES (:name, :password, :email)';
+        $sql = 'INSERT INTO users(name,password, email) VALUES (:name, :password, :email)';
         $pst = $cx->prepare($sql);
         $pst = $pst->execute([':password' => $password, 'email' => $email, ':name' => $name]);
         return $cx->lastInsertId();
@@ -36,7 +36,7 @@ class Auth extends Model
 
     function find($id){
         $cx = $this->getConnectionToDb();
-        $sql = 'SELECT * FROM blogboot.posts WHERE id = :id';
+        $sql = 'SELECT * FROM posts WHERE id = :id';
         $pst = $cx->prepare($sql);
         $pst->execute([':id' => $id]);
         return $pst->fetch();
@@ -44,7 +44,7 @@ class Auth extends Model
 
     function categories(){
         $cx = $this->getConnectionToDb();
-        $sql = 'SELECT * FROM blogboot.category';
+        $sql = 'SELECT * FROM category';
         $pst = $cx->query($sql);
         return $pst->fetchAll();
     }

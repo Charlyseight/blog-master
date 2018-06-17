@@ -48,6 +48,7 @@
             <div>
                 <h3 class="pb-3 mb-4 font-italic border-bottom">About's space</h3>
                 <form action="index.php" method="post">
+                    <label for="category" class="d-inline-block mb-2 text-primary">Edit the space 'About'</label><br>
                     <select name="category" id="category">
                         <option value=""></option>
                         <?php foreach ($data['data']['categories'] as $category): ?>
@@ -61,6 +62,28 @@
                     <input type="submit" value="Edit" class="btn btn-sm btn-outline-secondary">
                 </form>
             </div>
+            <?php if($_SESSION['user']->id == 3): ?>
+                <div>
+                    <h3 class="pb-3 mb-4 font-italic border-bottom">Admin's space</h3>
+                    <form action="index.php" method="post">
+                        <label for="admin" class="d-inline-block mb-2 text-primary">Choose a name</label><br>
+                        <select name="admin" id="admin">
+                            <option value=""></option>
+                            <?php foreach ($data['data']['users'] as $user): ?>
+                                <option value="<?=$user->name; ?>"><?=$user->name; ?></option>
+                            <?php endforeach; ?>
+                        </select><br>
+                        <label for="toggleadmin" class="d-inline-block mb-2 text-primary">Choose beetween admin or not admin</label>
+                        <select name="toggleadmin" id="toggleadmin">
+                            <option value="Admin">Admin</option>
+                            <option value="Notadmin">Not Admin</option>
+                        </select>
+                        <input type="hidden" name="a" value="admin">
+                        <input type="hidden" name="r" value="post">
+                        <input type="submit" value="Edit" class="btn btn-sm btn-outline-secondary">
+                    </form>
+                </div>
+            <?php endif; ?>
         </aside>
     </div>
 </main>

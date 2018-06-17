@@ -28,7 +28,7 @@
                 <?php else: ?>
                     <a class="btn btn-sm btn-outline-secondary" href="index.php?a=create&r=post">Create a post</a>
                     <a class="btn btn-sm btn-outline-secondary" href="index.php?a=userPages&r=post"><?= $_SESSION['user']->name; ?>'s posts</a>
-                    <?php if($_SESSION['user']->id == 3): ?>
+                    <?php if($_SESSION['user']->admin == 'Admin'): ?>
                         <a class="btn btn-sm btn-outline-secondary" href="index.php?a=adminPage&r=post">Admin</a>
                     <?php endif; ?>
                 <?php endif; ?>
