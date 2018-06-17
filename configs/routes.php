@@ -14,9 +14,16 @@ return [
     'authLoginForm' => 'GET/getLoginForm/auth',
     'authLogin' => 'POST/login/auth',
     'logOut' => 'GET/logOut/auth',
-    'endOfTheWorld' =>'POST/nuke/post'
-
-
+    'endOfTheWorld' =>'POST/nuke/post',
+    'postCategory' => 'GET/category/post',
+    'authRegister' => 'GET/register/auth',
+    "authStore" => 'POST/store/auth',
+    "postUser" => 'GET/userPages/post',
+    "postAdmin" => 'GET/adminPage/post',
+    "addCategory" => 'POST/addCat/post',
+    "removeCategory" => 'POST/removeCat/post',
+    "postArchive" => 'GET/archive/post',
+    "catAbout" => 'POST/catAbout/post',
 ];
 
 

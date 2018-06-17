@@ -1,0 +1,16 @@
+{
+  "name": "charlyscount/blogs-master",
+  "authors": [
+    {
+      "name": "Charlotte",
+      "email": "charlotte_toussaint@hotmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Blog\\Controllers\\": "controllers/",
+      "Blog\\Models\\": "models/"
+    }
+  }
+}

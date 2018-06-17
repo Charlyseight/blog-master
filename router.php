@@ -17,10 +17,11 @@ $r = $_REQUEST['r'] ?? $ressource;
 if (!in_array($method . '/' . $a . '/' . $r, $routes)) {
     die('Vous ne pouvez pas ');
 }
+require 'vendor/autoload.php';
+$controllerName = ucfirst($r) . 'Controller';
+$controllerQualifiedName= "Blog\\Controllers\\".$controllerName;
+$controller = new $controllerQualifiedName;
 
-$controllerFile = $r . 'Controller.php';
-require('controllers/' . $controllerFile);
 
-
-$data = call_user_func($a);
+$data = call_user_func([$controller, $a]);
 

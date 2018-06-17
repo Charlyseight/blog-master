@@ -9,7 +9,7 @@
     </div>
     <div>
         <p>
-            <?= $data['data']['post']->body ?>
+            <?= $data['data']['post']->content ?>
         </p>
     </div>
 </div>
@@ -19,6 +19,8 @@
             <input type="hidden" name="r" value="post">
             <input type="hidden" name="id" value="<?= $data['data']['post']->id ?>">
             <input type="submit" value="Oui, je veux supprimer cet article">
-        </form>
     </form>
+    <strong class="d-inline-block mb-2 text-primary">
+        <a href="index.php?a=adminPage&r=post">Non, je ne veux pas supprimer cet article</a>
+    </strong>
 </div>
